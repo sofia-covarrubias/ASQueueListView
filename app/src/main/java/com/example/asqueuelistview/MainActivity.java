@@ -27,11 +27,38 @@ public class MainActivity extends AppCompatActivity
         queue.enqueue("Ms. Rioux");
         queue.enqueue("Mrs. Lopez");
         queue.enqueue("Bro");
+        queue.enqueue("Sofia");
+        queue.enqueue("Jayden");
+        queue.enqueue("Ryan");
+        queue.enqueue("Ms. Rioux");
+        queue.enqueue("Mrs. Lopez");
+        queue.enqueue("Bro");
+        queue.enqueue("Sofia");
+        queue.enqueue("Jayden");
+        queue.enqueue("Ryan");
+        queue.enqueue("Ms. Rioux");
+        queue.enqueue("Mrs. Lopez");
+        queue.enqueue("Bro");
+        queue.enqueue("Sofia");
+        queue.enqueue("Jayden");
+        queue.enqueue("Ryan");
+        queue.enqueue("Ms. Rioux");
+        queue.enqueue("Mrs. Lopez");
+        queue.enqueue("Bro");
+        queue.enqueue("Sofia");
+        queue.enqueue("Jayden");
+        queue.enqueue("Ryan");
+        queue.enqueue("Ms. Rioux");
+        queue.enqueue("Mrs. Lopez");
+        queue.enqueue("Bro");
         String[] queueArray = queue.toStringArray();
 
         listViewAdapter = findViewById(R.id.listview);
         ArrayAdapter<String> array = new ArrayAdapter<String>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, queueArray);
         listViewAdapter.setAdapter(array);
+
+
+
 
 
 
