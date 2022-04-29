@@ -22,24 +22,17 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         queue.enqueue("Sofia");
-        queue.enqueue("Yo");
+        queue.enqueue("Jayden");
+        queue.enqueue("Ryan");
+        queue.enqueue("Ms. Rioux");
+        queue.enqueue("Mrs. Lopez");
+        queue.enqueue("Bro");
+        String[] queueArray = queue.toStringArray();
 
-        String[] queueArray = new String[queue.getSize()];
+        listViewAdapter = findViewById(R.id.listview);
+        ArrayAdapter<String> array = new ArrayAdapter<String>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, queueArray);
+        listViewAdapter.setAdapter(array);
 
-//        for (int i = 0; i < queue.getSize(); i++)
-//        {
-//
-//        }
-
-//        listViewAdapter = findViewById(R.id.listview);
-//        ArrayAdapter<String> array = new ArrayAdapter<String>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item);
-
-
-        /*
-        one = findViewById(R.id.listview);
-        ArrayAdapter<String> arr;
-        arr = new ArrayAdapter<String>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, elements);
-        one.setAdapter(arr); */
 
 
     }

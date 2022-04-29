@@ -51,6 +51,22 @@ public class Queue {
         }
     }
 
+    public String[] toStringArray ()
+    {
+        String[] queueArray = new String[this.size];
+        int qPos = 0;
+        int aPos = (queueArray.length - 1);
+        Node position = tail;
+        while (position != null && qPos < queueArray.length)
+        {
+            queueArray[aPos] = position.getData();
+            position = position.getLink();
+            qPos++;
+            aPos--;
+        }
+        return queueArray;
+    } // end toStringArray
+
     public int getSize() {
         return size;
     } // end getSize
